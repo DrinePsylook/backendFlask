@@ -1,7 +1,12 @@
 <div>
     <p>Liste de fruits : {{fruits}}</p>
+    {%for i in fruits%}
+        <li>{{fruits[i]}}</li>
+    {%endfor%}
 
     <p><a href="/table/customer">Client</a></p>
     <p><a href="/table/product">Produit</a></p>
+    <p><a href="/table/customer_order">Commandes des clients</a></p>
+    <p><a href="/table/order_detail">Détail des commandes</a></p>
     <a href=""></a>
 </div>

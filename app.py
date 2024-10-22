@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def home():
-    return "Hello, Flask !"
+    return render_template('index.html')
 
 @app.route("/simple-page")
 def simple_page():
@@ -19,4 +19,4 @@ def sql_table(name):
     sql_request = f"SELECT * FROM {name} LIMIT 50"
     res = cur.execute(sql_request)
     resultat = res.fetchall()
-    return resultat
+    return render_template('tables.html', tables=resultat, name=name)
