@@ -12,11 +12,11 @@
         <nav>
 
             <a href="/">Accueil</a>
-            <a href="/table/customer" id="onglet1" class="{% if active_onglet == 'customer' %}active{% endif %}">Clients</a>
-            <a href="/table/product" id="onglet2" class="{% if active_onglet == 'product' %}active{% endif %}" >Produits</a>
-            <a href="/table/customer_order" id="onglet3" class="{% if active_onglet == 'customer_order' %}active{% endif %}" >Commandes des clients</a>
-            <a href="/table/order_detail" id="onglet4" class="{% if active_onglet == 'order_detail' %}active{% endif %}" >Détail des commandes</a>
-            <a href="/table/all" id="onglet5" class="{% if active_onglet == 'all' %}active{% endif %}" >Tous les tableaux</a>
+            <a href="/table/customer" id="onglet1" class="{% if name == 'customer' %}active{% endif %}">Clients</a>
+            <a href="/table/product" id="onglet2" class="{% if name == 'product' %}active{% endif %}" >Produits</a>
+            <a href="/table/customer_order" id="onglet3" class="{% if name == 'customer_order' %}active{% endif %}" >Commandes des clients</a>
+            <a href="/table/order_detail" id="onglet4" class="{% if name == 'order_detail' %}active{% endif %}" >Détail des commandes</a>
+            <a href="/table/all" id="onglet5" class="{% if name == 'all' %}active{% endif %}" >Tous les tableaux</a>
         </nav>
     </header>
     <h1>Liste des Clients</h1>

@@ -28,7 +28,5 @@ def sql_table(name):
     res = cur.execute(sql_request)
     resultat = res.fetchall()
 
-    active_onglet = {name}
-
     columns_name = [description[0] for description in cur.description]
-    return render_template('tables_template.html', tables=resultat, name=name, col = columns_name, active_onglet=active_onglet)
+    return render_template('tables_template.html', tables=resultat, name=name, col = columns_name)
