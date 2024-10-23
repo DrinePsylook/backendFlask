@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Customer List</title>
+</head>
+<body>
+    <h1>Customer List </h1>
+    <table border="1">
+        <tr>
+            <th>Customer ID</th>
+            <th>Country</th>
+        </tr>
+        {% for customer in data %}
+        <tr>
+           
+            <td>{{ customer[0] }}</td>
+            <td>{{ customer[1] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
+

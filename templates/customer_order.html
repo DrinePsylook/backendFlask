@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Customer_order List</title>
+</head>
+<body>
+    <h1>Customer_order List </h1>
+    <table border="2">
+        <tr>
+            <th>Customer_order ID</th>
+            <th>invoice_nb</th>
+            <th>invoice_data</th>
+            <th>customer_id</th>
+            <th>
+        </tr>
+        {% for order in data %}
+        <tr>
+            <td>{{ order[0] }}</td>
+            <td>{{ order[1] }}</td>
+            <td>{{ order[2] }}</td>
+            <td>{{ order[3] }}</td>
+
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

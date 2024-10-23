@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>order_detail List</title>
+</head>
+<body>
+    <h1>order_detail List </h1>
+    <table border="3">
+        <tr>
+            <th>ID</th>
+            <th>quantity</th>
+            <th>order_id</th>
+            <th>product_id</th>
+        </tr>
+        {% for detail in data %}
+        <tr>
+            <td>{{ detail[0] }}</td>
+            <td>{{ detail[1] }}</td>
+            <td>{{ detail[2] }}</td>
+            <td>{{ detail[3] }}</td>
+
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
