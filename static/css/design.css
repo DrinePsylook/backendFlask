@@ -1,0 +1,76 @@
+/* index.css */
+/* remise a zero */
+body, h1, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Fond de la page */
+body {
+    color: #ffffff;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Titre principal */
+h1 {
+    color: #ffffff;
+    margin-bottom: 40px;
+
+    text-align: center;
+    font-family: Snell Roundhand, cursive;
+    font-size: 50px;
+    padding: 0px;
+    
+}
+
+/* Sous titre*/
+.zut {
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: Snell Roundhand, cursive;
+    font-size: 30px;
+}
+
+
+/*Border arrondi sous titre*/
+p {
+    text-decoration: none;
+    color: #abf1b7;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+
+/* espace entre les boutons*/
+li {
+    margin: 30px 0;
+}
+
+/* Style des boutons */
+a {
+    text-decoration: none;
+    color: #aaaaaa;
+    background: #424242;
+    padding: 10px;
+    border-radius: 30px;
+    border: 1px solid #858484;
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Centrer */
+ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+
+}
+
+/* Changement couleur sur bouton */
+a:hover {
+    background: #555555;
+    transition: background-color 0.3s ease; 
+
+}
