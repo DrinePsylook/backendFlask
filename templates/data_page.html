@@ -1,0 +1,21 @@
+<div>
+    <table>
+        <tb>{{table}}</tb>
+        <thead>
+            <tr>
+                {%for name in column_name%}
+                <th>{{name}}</th>
+                {%endfor%}
+            </tr>
+        </thead> 
+        <tbody>
+            {% for row in data %}
+                <tr>
+                {%for column in row%}
+                    <td>{{column}}</td>
+                    {%endfor%}
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
