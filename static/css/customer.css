@@ -48,19 +48,35 @@ p {
 }
 
 table {
-    background-color: #fcfbfb;
+    background-color: whitesmoke;
     text-align: center;
+    cursor: grab;
 }
+
+
+
+
+/* colonne  1 sur 2*/
+tr:nth-of-type(2n) { 
+    border: 1px solid black; 
+    background-color: rgba(88, 88, 88, 0.3); 
+} 
+
+
+tr:hover {
+    background-color: rgb(228, 228, 228);
+    }
 
 table, th, td
  {
     border: 2px groove rgb(255, 255, 255);
     border-collapse: collapse;
     border-radius: 2px;
+
   }
 
 th {
-    background-color: black;
+    background-color: rgb(51, 51, 51);
     color: white;
 }
 
@@ -71,10 +87,7 @@ th, td
     width: 250px;
   }
 
-tr:nth-of-type(2n) { 
-    border: 1px solid black; 
-    background-color: rgba(88, 88, 88, 0.3); 
-} 
+
 
 
 /* coloration bouton page selectionner*/
