@@ -27,11 +27,6 @@ p {
 }
 
 #MaTable {
-    width: 30%;
-    padding: 2px; 
-    border-spacing: 2px; 
-    margin: 30px 0;
-    font-family: 	Courier New;
     text-transform : lowercase;
 }
 
@@ -45,8 +40,16 @@ p {
     background: rgb(255, 0, 0);
 }
 
+.tabdiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 1%;
+}
+
 table {
     background-color: #fcfbfb;
+    text-align: center;
 }
 
 table, th, td
@@ -65,8 +68,7 @@ th, td
   {   
     padding-top: 2px;
     padding-bottom: 2px;
-    padding-left: 70px;
-    padding-right: 70px;
+    width: 250px;
   }
 
 tr:nth-of-type(2n) { 

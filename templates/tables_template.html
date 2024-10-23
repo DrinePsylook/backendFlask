@@ -8,19 +8,24 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/customer.css') }}">
 </head>
 <body>
-    <a href="/">Accueil</a>
-    <a href="/table/customer" class="active" >Clients</a>
-    <a href="/table/product">Produits</a>
-    <a href="/table/customer_order">Commandes des clients</a>
-    <a href="/table/order_detail">Détail des commandes</a>
+    <header>
+        <nav>
+            <a href="/">Accueil</a>
+            <a href="/table/customer" class="active" >Clients</a>
+            <a href="/table/product">Produits</a>
+            <a href="/table/customer_order">Commandes des clients</a>
+            <a href="/table/order_detail">Détail des commandes</a>
+            <a href="/table/all">Tous les tableaux</a>
+        </nav>
+    </header>
     <h1>Liste des Clients</h1>
     <div>
 
         <p class = "zut">Voici la liste des {{name}} </p>
 
     <div class = "tabdiv">
-        <CENTER>   
-        <table>
+
+        <table id="MaTable">
         
             <caption>Table : {{name}}</caption>
     
@@ -43,7 +48,7 @@
             </tbody>
         
         </table>
-    </CENTER>
+
     </div>
 
 </body>

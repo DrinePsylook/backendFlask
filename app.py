@@ -12,7 +12,7 @@ def sql_table(name):
     cur = db_con.cursor()
     
     if name == "all":
-        sql_request = '''SELECT customer.id AS id_client, customer.country AS pays, co.id AS id_commande_client, co.invoice_nb AS numero_facture, co.invoice_date AS date_facture, od.id AS id_detail_commande, od.quantity AS quantite, product.id AS id_produit, product.description AS description, product.price As prix     
+        sql_request = '''SELECT customer.id AS numero_client, customer.country AS pays, co.id AS id_commande_client, co.invoice_nb AS numero_facture, co.invoice_date AS date_facture, od.id AS id_detail_commande, od.quantity AS quantite, product.id AS id_produit, product.description AS description, product.price As prix     
                             FROM customer 
                             LEFT JOIN customer_order as co
                                 ON customer.id = co.customer_id
