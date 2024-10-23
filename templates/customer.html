@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clients</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/design.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/customer.css') }}">
+</head>
+<body>
+    <a href="/">Accueil</a>
+    <a href="/table/customer" class="active" >Clients</a>
+    <a href="/table/product">Produits</a>
+    <a href="/table/customer_order">Commandes des clients</a>
+    <a href="/table/order_detail">Détail des commandes</a>
+    <h1>Liste des Clients</h1>
+    <div>
+        <p>Voici la liste des clients :</p>
+    <CENTER>   
+    <table id="MaTable" class="tabcenter">
+    <thead>
+        <tr class="column-color">
+            {% for column in column_names %}
+                <th>{{ column }}</th>
+            {% endfor %}
+        </tr>
+    </thead>
+    <tbody>
+        {% for customer in customers %}
+            <tr>
+                {% for value in customer %}
+                    <td>{{ value }}</td>
+                {% endfor %}
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
+</CENTER>
