@@ -11,11 +11,11 @@
     <header>
         <nav>
             <a href="/">Accueil</a>
-            <a href="/table/customer" class="active" >Clients</a>
-            <a href="/table/product">Produits</a>
-            <a href="/table/customer_order">Commandes des clients</a>
-            <a href="/table/order_detail">Détail des commandes</a>
-            <a href="/table/all">Tous les tableaux</a>
+            <a href="/table/customer" id="onglet1" class="onglet" >Clients</a>
+            <a href="/table/product" id="onglet2" class="onglet" >Produits</a>
+            <a href="/table/customer_order" id="onglet3" class="onglet" >Commandes des clients</a>
+            <a href="/table/order_detail" id="onglet4" class="onglet" >Détail des commandes</a>
+            <a href="/table/all" id="onglet5" class="onglet5" >Tous les tableaux</a>
         </nav>
     </header>
     <h1>Liste des Clients</h1>
@@ -50,6 +50,8 @@
         </table>
 
     </div>
-
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
 </body>
 </html>
